@@ -1,0 +1,11 @@
+﻿@*//on affiche une variable avec @*@
+    @{
+        Dictionary<string, int> maListe = Model;
+    }
+<ul>
+    @foreach (var data in maListe)
+    {
+        <li>@data.Key @data.Value  </li>
+    }
+</ul>
+
